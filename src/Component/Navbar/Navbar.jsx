@@ -47,6 +47,14 @@ const Navbar = () => {
        to='testimonials'>Testimonials</Link>
     </li>
     <li>
+        <Link spy={true} 
+      smooth={true} 
+      offset={50} 
+      duration={500} 
+      className="font-bold" 
+       to='education'> Education</Link>
+    </li>
+    <li>
        <Link spy={true} 
       smooth={true} 
       offset={50} 

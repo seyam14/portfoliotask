@@ -1,3 +1,4 @@
+import Education from "../Education/Education";
 import Hero from "../Hero/Hero";
 import MySkillsSection from "../MySkillsSection/MySkillsSection";
 import Projects from "../Projects/Projects";
@@ -13,6 +14,7 @@ const Home = () => {
             <Services></Services>
             <Projects></Projects>
             <MySkillsSection></MySkillsSection>
+            <Education></Education>
             <TestimonialPage></TestimonialPage>  
             <Socialpage></Socialpage> 
         </div>

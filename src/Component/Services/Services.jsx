@@ -29,6 +29,7 @@ const Services = () => {
               <div className="text-center">
                 <h3 className="text-lg font-semibold mb-2">{service.name}</h3>
                 <p >{service.desc}</p>
+                <p><span className='font-bold '>Price:</span>{service.charge}</p>
               </div>
             </div>
           ))}
