@@ -12,7 +12,7 @@ const Home = () => {
             <Services></Services>
             <Projects></Projects>
             <MySkillsSection></MySkillsSection>
-            <TestimonialPage></TestimonialPage>
+            <TestimonialPage></TestimonialPage>   
         </div>
     );
 };

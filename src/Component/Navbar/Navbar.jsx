@@ -52,7 +52,7 @@ const Navbar = () => {
       offset={50} 
       duration={500}
        className="font-bold" 
-       to='social'>Social Media Handles</Link>
+       to='social'>SocialMedia</Link>
     </li>
     </>
 
