@@ -18,18 +18,24 @@ const Projects = () => {
 
     fetch();
   }, []);
+
   useEffect(() => {
-    setVisibleProjects(projects.slice(0, 4)); 
+    setVisibleProjects(projects.slice(0, 4));
   }, [projects]);
 
   const handleSeeMore = () => {
-    setVisibleProjects(projects); 
-    setShowMore(true); 
+    setVisibleProjects(projects);
+    setShowMore(true);
+  };
+
+  const handleSeeLess = () => {
+    setVisibleProjects(projects.slice(0, 4));
+    setShowMore(false);
   };
 
   return (
     <div className="container mx-auto px-2 py-4" id='projects'>
-      <h2  className="text-center font-bold text-white text-4xl m-4">Projects</h2>
+      <h2 className="text-center font-bold text-white text-4xl m-4">Projects</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
         {visibleProjects.map((project) => (
           <div key={project._id} className="card bordered shadow-lg bg-teal-400">
@@ -54,9 +60,13 @@ const Projects = () => {
           </div>
         ))}
       </div>
-      {!showMore && (
+      {!showMore ? (
         <div className="flex justify-center mt-4">
           <button onClick={handleSeeMore} className="btn btn-active btn-neutral">See More</button>
+        </div>
+      ) : (
+        <div className="flex justify-center mt-4">
+          <button onClick={handleSeeLess} className="btn btn-active btn-neutral">See Less</button>
         </div>
       )}
     </div>

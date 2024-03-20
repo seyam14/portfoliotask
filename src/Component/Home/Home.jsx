@@ -2,6 +2,7 @@ import Hero from "../Hero/Hero";
 import MySkillsSection from "../MySkillsSection/MySkillsSection";
 import Projects from "../Projects/Projects";
 import Services from "../Services/Services";
+import Socialpage from "../Socialpage/Socialpage";
 import TestimonialPage from "../TestimonialPage/TestimonialPage";
 
 
@@ -12,7 +13,8 @@ const Home = () => {
             <Services></Services>
             <Projects></Projects>
             <MySkillsSection></MySkillsSection>
-            <TestimonialPage></TestimonialPage>   
+            <TestimonialPage></TestimonialPage>  
+            <Socialpage></Socialpage> 
         </div>
     );
 };
